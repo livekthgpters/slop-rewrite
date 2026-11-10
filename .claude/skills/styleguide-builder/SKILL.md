@@ -35,7 +35,7 @@ slop-rewrite 의 기본 줄글 가이드(장피엠)를 내 문체로 바꾸는 �
 
 ## Paths
 
-- 스킬 디렉터리: `.claude/skills/styleguide-builder/` (프로젝트 루트 기준). 아래에서 `$S` = `.claude/skills/styleguide-builder/scripts`, `$K` = `styleguides/<slug>`.
+- 스킬 디렉터리: `.claude/skills/styleguide-builder/` (프로젝트 루트 기준). 프로젝트 루트는 이 SKILL.md 에서 세 단계 위다. 전역 심링크로 불렸으면 이 파일의 실제 경로(`realpath`)에서 센다. 아래에서 `$S` = `.claude/skills/styleguide-builder/scripts`, `$K` = `styleguides/<slug>`.
 - 모든 명령은 프로젝트 루트에서 `python -X utf8 $S/<script>.py` 로 실행한다(Windows 한글 출력). 스크립트가 없으면 추측해서 짜지 말고 사용자에게 알린다.
 - 의존성: 표준 라이브러리. HTML 수집에는 `beautifulsoup4`와 `lxml`이 모두 필요하다. `--md-dir` 경로는 두 패키지 없이 동작.
 - 단계별 입출력·멱등 계약·오류 표는 `references/pipeline.md`.

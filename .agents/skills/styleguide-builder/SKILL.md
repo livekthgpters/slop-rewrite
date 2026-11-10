@@ -7,7 +7,7 @@ description: 한 저자의 한국어 블로그나 로컬 Markdown 글에서 문�
 
 먼저 프로젝트 루트의 `AGENTS.md`와 `.claude/skills/styleguide-builder/SKILL.md`를 읽고 따른다. 기존 스크립트와 자료를 공유하며 복사본을 만들지 않는다.
 
-- 이 파일에서 세 단계 위가 프로젝트 루트다. 명령은 루트에서 실행한다.
+- 이 파일에서 세 단계 위가 프로젝트 루트다. 전역 심링크로 불렸으면 이 파일의 실제 경로(`realpath`)에서 센다. 명령은 루트에서 실행한다.
 - 본체의 상대 `references/`, `assets/`, `scripts/`, `tests/` 경로는 `.claude/skills/styleguide-builder/` 기준이다. `$S`와 `$K`는 본체가 정의한 경로로 설정한다.
 - 숫자는 기존 분석·렌더 스크립트로 계산한다. 완성 가이드라인을 직접 고치지 말고 워크시트·프로파일·템플릿을 수정한 후 재렌더한다.
 - HTML 수집에는 `beautifulsoup4`와 `lxml`이 모두 필요하다. 빠진 패키지만 설치한다. 로컬 Markdown 처리에 웹 수집용 패키지를 요구하지 않는다.

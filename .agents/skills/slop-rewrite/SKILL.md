@@ -9,7 +9,7 @@ description: 한국어 글을 윤문·퇴고하거나 AI 티를 제거하고 검
 
 ## 경로
 
-이 파일에서 세 단계 위가 프로젝트 루트다. 명령은 루트에서 실행한다. 본체 문서의 `references/`, `scripts/`, `tests/`는 `.claude/skills/slop-rewrite/` 기준이다. `.agents/skills/`로 치환하지 않는다.
+이 파일에서 세 단계 위가 프로젝트 루트다. 전역 심링크로 불렸으면 이 파일의 실제 경로(`realpath`)에서 센다. 명령은 루트에서 실행한다. 본체 문서의 `references/`, `scripts/`, `tests/`는 `.claude/skills/slop-rewrite/` 기준이다. `.agents/skills/`로 치환하지 않는다.
 
 ## Codex 도구 대응
 

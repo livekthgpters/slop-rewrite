@@ -13,7 +13,7 @@ description: 산출물을 코멘트용 claude.ai 아티팩트로 발행하고, �
 
 ## 공통
 
-- 프로젝트 루트 = 이 SKILL.md 에서 세 단계 위(`.claude/skills/taste-builder/` → 루트). 명령은 루트에서 상대 경로로 돌리고 절대 경로를 박지 않는다. 아래 `$S` = `.claude/skills/taste-builder/scripts`.
+- 프로젝트 루트 = 이 SKILL.md 에서 세 단계 위(`.claude/skills/taste-builder/` → 루트). 전역 심링크로 불렸으면 이 파일의 실제 경로(`realpath`)에서 센다. 명령은 루트에서 상대 경로로 돌리고 절대 경로를 박지 않는다. 아래 `$S` = `.claude/skills/taste-builder/scripts`.
 - 데이터: `taste/writing-taste.md`(취향 문서), `taste/cases/cases.jsonl`(원장, 추가 전용), `taste/cases/raw/`, `taste/changelog.md`, `taste/artifacts.json`(발행 레지스트리).
 - 코멘트 원문과 사용자 문장은 한 글자도 바꾸지 않는다. 해석은 `note`에만.
 - 브리핑은 판정 먼저, 바뀐 것만. 케이스 목록·커버리지는 뺀다.
